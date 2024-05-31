@@ -1,0 +1,9 @@
+CREATE TABLE tarefas(
+	id SERIAL PRIMARY KEY,
+	titulo VARCHAR(60) NOT NULL,
+	descricao TEXT,
+	concluido BOOLEAN DEFAULT(FALSE),
+	estado INTEGER DEFAULT(1),
+	criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	atualizado_em TIMESTAMP
+);

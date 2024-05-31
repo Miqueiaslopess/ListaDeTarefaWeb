@@ -1,0 +1,85 @@
+.tarefaContainer {
+    gap: 30px;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(16, 48, 17, 0.7);
+    justify-content: space-between;
+}
+
+.tarefaEditavel {
+    gap: 30px;
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(6, 146, 116, 0.9);
+    justify-content: space-around;
+}
+
+.tarefaEditavel h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid rgb(24, 23, 23);
+
+}
+
+.tarefaEditavel .descricao {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.dadosDeRegistro {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnEditar {
+    background: rgb(6, 146, 116);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFF;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.tarefaArquivadaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.tarefaArquivadaContainer select {
+    margin-top: 1rem;
+    width: 12rem;
+    height: 3rem;
+}
+
+/* Estilizando o ícone */
+.icone {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+}

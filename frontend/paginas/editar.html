@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/editar.css">
+    <link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Charmonman:wght@400;700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Frank+Ruhl+Libre:wght@300..900&family=Miltonian&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Questrial&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Doodle+Shadow&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Edite sua tarefa</title>
+</head>
+<body onload="pegarTarefaPorId()"> <!-- Ao recarregar a página o id que está como paramêtro na url é capturado -->
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1><a href="../index.html">Lista de Tarefas</a></h1>
+        <a href="../index.html">Início</a>
+    </div>
+    <!-- Fim - Navbar -->
+    
+    <div class="container">
+        <!-- Área de nova Tarefa -->
+        <section id="novaTarefa">
+
+            <div class="formTarefa">
+                <div class="tarefa">
+                    <h1>Edição</h1>
+                    <div class="items">
+                        <input id="tituloInput" name="createTask" type="text" placeholder="Altere o título...">
+                        <input id="descricaoInput" name="createDesc" type="text" placeholder="Altere a descricao...">
+                        
+                        <button type="submit" onclick="editarTarefa()" class="btnEditar">
+                            <img src="./../img/icones/diskette.png" width="32">
+                            Salvar
+                        </button>
+                    </div>
+                </div>
+        </section>
+        <!-- Fim - Área de nova Tarefa -->
+
+        <!-- Tarefa a ser editada -->
+        <section id="tarefas">
+            
+                <div id="tarefaEditavel" class="tarefaEditavel">
+                
+                    <h2 id="tituloEdit"></h2>
+                   
+                    <p class="descricao" id="descricaoEdit"></p>
+                    
+                    <div class="dadosDeRegistro">
+                        <p class="criadoEm" id="criadoEmEdit"></p>
+                        <p class="atualizadoEm" id="atualizadoEmEdit"></p>
+                    </div>
+                    
+                </div>
+      
+        </section>
+        <!-- Fim - Tarefa a ser editada -->
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <span class="copyright">direitos reservados &copy; 2024</span>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="./../js/index.js"></script>
+
+</body>
+</html>

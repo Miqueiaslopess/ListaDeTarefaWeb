@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-size: cover;
+    background-image: url('../img/walpaper.jpg');
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar {
+    height: 80px;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Tela de Início */
+#novaTarefa {
+    padding: 30px;
+    height: 70vh;  
+}
+
+.formTarefa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formTarefa h1 {
+    font-size: 3em;
+    text-align: center;
+    color: rgba(2, 64, 14, 0.7);
+}
+
+.tarefa {
+    width: 40vw;
+    height: auto;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.items {
+    gap: 20px;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#createDesc {
+    height: 10vh;
+    text-align: start;
+    width: 30vw;
+}
+
+.tarefa input {
+    width: 30vw;
+    outline: none;
+    padding: 20px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    border: solid 2px rgba(6, 146, 116, 1);
+}
+
+.tarefa .btnCriar {
+    color: #FFF;
+    width: 10vw;
+    border: none;
+    padding: 7px;
+    height: 6.5vh;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    background-color: rgba(6, 146, 116, 1);;
+}
+
+.tarefa button:hover {
+    cursor: pointer;
+    background-color: #80bd8c;
+}
+
+/*Todas Tarefas*/
+#tarefas {
+    height: 80vh;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.todasTarefas {
+    gap: 15px;
+    height: 70vh;
+    display: flex;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    flex-direction: column;
+    scrollbar-color: #4c5163 white;
+    justify-content: start;
+}
+
+.todasTarefas .tituloSecao {
+    font-size: 3rem;
+}
+
+.todasTarefas h2{
+    font-size: 1.5em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.task {
+    gap: 30px;
+    width: 80%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgb(3, 70, 55);
+}
+
+.taskHeader {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    border-bottom: #979595 solid 1px;
+}
+
+.taskBody {
+    width: 100%;
+    height: 70%;   
+    position: relative;
+}
+
+.taskBody .descTask {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.taskBody .estadoTarefa{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+}
+
+.containerOptions {
+    gap: 5px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+.containerOptions button{
+    width: 120px;
+    padding: 6px;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.edit {
+    border-radius: 5px;
+    border: solid 2px rgba(6, 146, 116, 1);
+    padding: 0;
+}
+
+.edit a{
+    text-decoration: none;
+    color: rgba(6, 146, 116, 1);
+}
+
+.btnMarcarTarefa {
+    width: 120px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: rgb(209, 85, 13);
+    color: #fff;
+}
+
+.delete {
+    color: #ff6f4f;
+    border-radius: 5px;
+    border: solid 1px #fa8469;
+}
+
+footer {
+    bottom: 0;
+    height: 5vh;
+    width: 100vw;
+    position: fixed;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: -4px;
+    display: inline-block;
+    align-content: center;
+    backdrop-filter: blur(20px);
+}
+
+.copyright {
+    font-weight: bold;
+    text-align: center;
+    color: rgba(10, 23, 50, 0.5);
+}
+
+.reduzirTexto {
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Oculta qualquer conteúdo que não couber no contêiner */
+    text-overflow: ellipsis; /* Exibe reticências (...) quando o texto ultrapassa o contêiner */
+}

@@ -1,0 +1,59 @@
+Itens necessários para executar o projeto:
+
+- Node + NPM
+
+Github do projeto: https://github.com/Miqueiaslopess/ListaDeTarefaWeb.git
+
+---------------------------------------------------------------------------------------
+
+Preparar e executar o projeto
+
+#1 - clonar repositório no github
+
+git clone https://github.com/Miqueiaslopess/ListaDeTarefaWeb.git
+
+
+#2 - entrar no projeto
+cd .\ListaDeTarefaWeb\
+
+
+#3 - instalar as dependencias do backend
+
+	cd backend 
+	npm install
+
+
+#4 - instalar as dependencias do frontend
+
+	cd frontend
+	npm install
+
+
+#5 - executar o backend
+	cd backend 
+	npm run dev
+
+
+#6 - criar o banco de dados no postgreSQL
+
+	nome do banco de dados: lista_de_tarefas_bd
+
+
+#7 - criar a tabela "tarefas"
+	
+	crie uma tabela chamada "tarefas" com a estrutura abaixo (também presente no arquivo "tabela-tarefas.sql"):
+		
+
+	CREATE TABLE tarefas(
+		id SERIAL PRIMARY KEY,
+		titulo VARCHAR(60) NOT NULL,
+		descricao TEXT,
+		concluido BOOLEAN DEFAULT(FALSE),
+		estado INTEGER DEFAULT(1),
+		criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+		atualizado_em TIMESTAMP
+	);
+
+
+#8 - abrir index.html no navegador
+
